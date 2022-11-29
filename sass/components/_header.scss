@@ -1,0 +1,19 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 31px;
+}
+
+.nav {
+    display: none;
+}
+
+.header__thumb {
+    display: none;
+}
+
+.mobile-container {
+    display: flex;
+    justify-content: space-between;
+}

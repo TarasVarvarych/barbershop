@@ -1,0 +1,42 @@
+.button {
+  display: block;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $text-color-accented;
+  background-color: inherit;
+  width: 160px;
+  height: 40px;
+  border: 1px solid $brand-color;
+  border-radius: 25px;
+}
+
+.prices__button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking__button {
+  color: $white-color;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: $white-color;
+}
+
+.menu__icon {
+  fill: currentColor;
+}
+
+.menu-icon--close {
+  display: none;
+}

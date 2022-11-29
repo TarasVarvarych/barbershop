@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="mobile-container">
+          <a class="logo" href="./index.html">
+            <img src="./images/Logo.png" alt="logo" width="69" />
+          </a>
+          <button type="button" class="menu__btn">
+            <svg width="" height="">
+              <use class="menu__icon" href="./images/icons.svg#icon-menu"></use>
+              <use class="menu__icon--close" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li class="nav__item"><a class="nav__link" href="">About</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Services and prices</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">Barbers</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header__thumb">
+          <a href="tel:+38044111111">+38 044 111 11 11</a>
+          <button class="button" type="button">Online-booking</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="section hero">
+        <div class="container">
+          <ul class="socials-iy socials-iy--header">
+            <li class="socials-iy__item">
+              <a class="socials-iy__link" href="">Instagram</a>
+            </li>
+            <li class="socials-iy__item">
+              <a class="socials-iy__link" href=""></a>Youtube
+            </li>
+          </ul>
+          <h1 class="hero__uppertitle">A hair salon for men in Kyiv</h1>
+          <h2 class="hero__title">BarberShop</h2>
+          <p class="hero__text">
+            We are experts in trendy men’s haircuts. We work quickly, carefully
+            and with style.
+          </p>
+          <ul class="pagination">
+            <li><button type="button">Back</button></li>
+            <li><button type="button">Forward</button></li>
+          </ul>
+        </div>
+      </section>
+      <!-- ABOUT US -->
+      <section class="section about">
+        <div class="container">
+          <ul class="about__list">
+            <li class="about__item"><img src="" alt="" /></li>
+            <li class="about__item"><img src="" alt="" /></li>
+          </ul>
+          <h2 class="about__uppertitle">About</h2>
+          <h3 class="about__title">Best Barbershop in your city</h3>
+          <p class="about__text">
+            If you want to add more confidence to your image, you should
+            definitely visit us.
+          </p>
+          <p class="about__description">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+          <button class="button" type="button">ONLINE-BOOKING</button>
+        </div>
+      </section>
+      <!-- PRICES -->
+      <section class="section prices">
+        <div class="container">
+          <p class="prices__text">Spend your time with the best masters</p>
+          <h2 class="prices__title">Services and prices</h2>
+          <div class="prices__thumb">
+            <ul class="prices__list">
+              <li class="prices__item">
+                <span class="price__service">Men’s haircut</span>
+                from 300 uah.
+              </li>
+              <li class="prices__item">
+                <span class="price__service">Beard trim</span>
+                from 300 uah.
+              </li>
+              <li class="prices__item">
+                <span class="price__service">Mustache trim</span>
+                from 200 uah.
+              </li>
+              <li class="prices__item">
+                <span class="price__service">Straight razor shave</span>
+                from 200 uah.
+              </li>
+            </ul>
+            <ul class="prices__list">
+              <li class="prices__item">
+                <span class="price__service">Trainee’s haircut</span>
+                from 50 uah.
+              </li>
+              <li class="prices__item">
+                <span class="price__service">Haircut under the nozzle</span>
+                from 200 uah.
+              </li>
+              <li class="prices__item">
+                <span class="price__service"
+                  >Children’s haircut (0-12 y.o.)</span
+                >
+                from 300 uah.
+              </li>
+              <li class="prices__item">
+                <span class="price__service">Camouflage of gray hair</span>
+                from 200 uah.
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="button prices__button">
+            online-booking
+          </button>
+        </div>
+      </section>
+      <!-- WHY US -->
+      <section class="section why-us">
+        <div class="container">
+          <p class="why-us__description">Old traditional school</p>
+          <h2 class="why-us__title">¿Why people come to us?</h2>
+          <p class="why-us__text">
+            Only good things are said about us. But it's better to see and feel
+            1 time than read 10 times.
+          </p>
+          <ul class="statistics">
+            <li class="statistics__item">
+              <h3 class="statistics__title">600</h3>
+              <p class="statistics__text">
+                Satisfied customers <br />
+                per day
+              </p>
+            </li>
+            <li class="statistics__item">
+              <h3 class="statistics__title">50</h3>
+              <p class="statistics__text">
+                Awards for excellent <br />
+                service
+              </p>
+            </li>
+            <li class="statistics__item">
+              <h3 class="statistics__title">20</h3>
+              <p class="statistics__text">
+                Kyiv’s best <br />
+                barbers
+              </p>
+            </li>
+            <li class="statistics__item">
+              <h3 class="statistics__title">100</h3>
+              <p class="statistics__text">
+                Gifts for regular <br />
+                customers
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- BARBERS -->
+      <section class="section barbers">
+        <div class="container">
+          <p class="barbers__uppertitle">For true enjoyers of the atmosphere</p>
+          <h2 class="barbers__title">Our barbers</h2>
+          <ul class="barbers__list">
+            <li class="barbers__item">
+              <picture>
+                <!-- MOBILE -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/john-mobile@1x.jpg 1x,
+                    ./images/john-mobile@2x.jpg 2x
+                  "
+                />
+                <img src="./images/john-mobile@1x.jpg" alt="" />
+              </picture>
+              <div class="barbers__thumb">
+                <h3 class="barbers__name">John Smith</h3>
+                <p class="barbers__description">Extreme Barber</p>
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-inst"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-tw"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-fb"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-ld"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="barbers__item">
+              <picture>
+                <!-- MOBILE -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/michael-mobile@1x.jpg 1x,
+                    ./images/michael-mobile@2x.jpg 2x
+                  "
+                />
+                <img src="./images/michael-mobile@1x.jpg" alt="" />
+              </picture>
+              <div class="barbers__thumb">
+                <h3 class="barbers__name">Michele Doe</h3>
+                <p class="barbers__description">Extreme Barber</p>
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-inst"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-tw"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-fb"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-ld"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="barbers__item">
+              <picture>
+                <!-- MOBILE -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/alan-mobile@1x.jpg 1x,
+                    ./images/alan-mobile@2x.jpg 2x
+                  "
+                />
+                <img src="./images/alan-mobile@1x.jpg" alt="" />
+              </picture>
+              <div class="barbers__thumb">
+                <h3 class="barbers__name">Alan Black</h3>
+                <p class="barbers__description">Extreme Barber</p>
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-inst"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-tw"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-fb"></use></svg
+                    ></a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href=""
+                      ><svg class="socials__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-ld"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- gallery -->
+
+      <section class="section portfolio">
+        <div class="container">
+          <h2 class="visually-hidden">Our portfolio</h2>
+          <p class="portfolio__text">In Latin, "barba" means "beard"</p>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <picture>
+                <!-- MOBILE -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/work-1-mobile@1x.jpg x1, ./images/portfolio/work-1-mobile@2.jpg x2" />
+                <img src="./images/portfolio/work-1-mobile@1x.jpg" alt=""
+              /></picture>
+            </li>
+            <li class="portfolio__item">
+              <picture>
+                <!-- MOBILE -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/work-2-mobile@1x.jpg x1, ./images/portfolio/work-2-mobile@2.jpg x2" />
+                <img src="./images/portfolio/work-2-mobile@1x.jpg" alt=""
+              /></picture>
+            </li>
+            <li class="portfolio__item">
+              <picture>
+                <!-- MOBILE -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/work-3-mobile@1x.jpg x1, ./images/portfolio/work-3-mobile@2.jpg x2" />
+                <img src="./images/portfolio/work-3-mobile@1x.jpg" alt=""
+              /></picture>
+            </li>
+            <li class="portfolio__item">
+              <picture>
+                <!-- MOBILE -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/work-4-mobile@1x.jpg x1, ./images/portfolio/work-4-mobile@2.jpg x2" />
+                <img src="./images/portfolio/work-4-mobile@1x.jpg" alt=""
+              /></picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- BOOKING -->
+      <section class="section booking">
+        <div class="container">
+          <form class="booking__form" action="">
+            <p class="booking__text">Online-booking</p>
+            <div class="booking__thumb">
+              <label class="booking__label" for="name"></label>
+              <input
+                class="booking__input"
+                type="text"
+                id="name"
+                placeholder="Name*"
+              />
+
+              <label class="booking__label" for="phone"></label>
+              <input
+                class="booking__input"
+                type="tel"
+                id="phone"
+                placeholder="Phone*"
+              />
+            </div>
+            <label class="booking__label" for="message"></label>
+            <input
+              class="booking__input booking__input--message"
+              type="text"
+              id="message"
+              placeholder="Message"
+            />
+            <button class="booking__button button" type="submit">send</button>
+          </form>
+        </div>
+      </section>
+      <!-- CONTACTS -->
+      <section class="section contacts">
+        <div class="container">
+          <p class="contacts__title">Contacts</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--address" href=""
+                ><svg class="contacts__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-map-pin"></use>
+                </svg>
+                <span>st. Vasilkovaya, 7A Kiev, 08132</span>a</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="tel:+380441111111"
+                ><svg class="contacts__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <span>+38 044 111 11 11</span></a
+              >
+            </li>
+            <li class="contacts__item">
+              <a
+                class="contacts__link contacts__link--mail"
+                href="mailto:barbershop@email.com"
+                ><svg class="contacts__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                <span>barbershop@email.com</span></a
+              >
+            </li>
+          </ul>
+          <div class="schedule">
+            <p class="schedule__text">Working hours</p>
+            <p class="schedule__hours">Every day from 9:00 to 22:00</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__copyrigth">&copy; Copyright 2020</p>
+        <ul class="socials-iy socials-iy--footer">
+          <li class="socials-iy__item">
+            <a class="socials-iy__link" href="">Instagram</a>
+          </li>
+          <li class="socials-iy__item">
+            <a class="socials-iy__link" href="">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

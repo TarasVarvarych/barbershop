@@ -1,0 +1,16 @@
+.footer {
+  padding: 44px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer__copyrigth {
+  font-weight: 600;
+  font-size: 11px;
+  color: $text-color-primary;
+  margin-top: 35px;
+}
