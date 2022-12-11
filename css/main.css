@@ -71,6 +71,7 @@ body {
   top: 0;
   left: 0;
   padding: 40px 31px;
+  width: 100vw;
 }
 
 .nav {
@@ -79,11 +80,6 @@ body {
 
 .header__thumb {
   display: none;
-}
-
-.mobile-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .hero {
@@ -211,21 +207,35 @@ body {
   color: #ffffff;
 }
 
+.menu-close {
+  display: none;
+  fill: currentColor;
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
 .menu__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: #ffffff;
+  z-index: 999;
 }
-
-.menu__icon {
-  fill: currentColor;
+.menu__btn.is-open {
+  padding: 11px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
-
-.menu-icon--close {
+.menu__btn.is-open .menu-close {
+  display: block;
+  fill: #303030;
+}
+.menu__btn.is-open .menu-icon {
   display: none;
 }
 
@@ -695,4 +705,80 @@ body {
   font-size: 11px;
   color: #9da4bd;
   margin-top: 35px;
+}
+
+.mobile-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-menu {
+  display: none;
+}
+.mobile-menu.is-open {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 111px;
+  padding-left: 40px;
+  padding-right: 99px;
+  padding-bottom: 227px;
+  background-color: #ffffff;
+  min-height: 100vw;
+}
+
+.mobile-nav__item {
+  margin-bottom: 24px;
+}
+.mobile-nav__item:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  color: #303030;
+  letter-spacing: 0.1em;
+}
+.mobile-nav__link--current {
+  color: #ff6c00;
+}
+
+.mobile-nav {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__tel {
+  display: block;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.socials-iy--mobile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 64px;
+  margin-left: 100px;
+}
+.socials-iy--mobile::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #303030;
+  width: 60px;
+  top: 9px;
+  left: -100px;
+}
+
+.socials-iy__link--mobile {
+  font-weight: 600;
+  font-size: 14px;
+  color: #303030;
 }/*# sourceMappingURL=main.css.map */

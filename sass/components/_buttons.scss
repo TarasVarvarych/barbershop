@@ -23,20 +23,34 @@
   color: $white-color;
 }
 
+.menu-close {
+  display: none;
+  fill: currentColor;
+}
+
+.menu-icon {
+  fill: currentColor;
+}
 .menu__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: $white-color;
-}
+  z-index: 999;
+  &.is-open {
+      padding: 11px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  &.is-open .menu-close {
+    display: block;
+    fill: $text-color-accented;
+  }
 
-.menu__icon {
-  fill: currentColor;
-}
-
-.menu-icon--close {
-  display: none;
+  &.is-open .menu-icon {
+    display: none;
+  }
 }

@@ -27,10 +27,13 @@
           <a class="logo" href="./index.html">
             <img src="./images/Logo.png" alt="logo" width="69" />
           </a>
-          <button type="button" class="menu__btn">
-            <svg width="" height="">
-              <use class="menu__icon" href="./images/icons.svg#icon-menu"></use>
-              <use class="menu__icon--close" href="./images/icons.svg#icon-menu"></use>
+          <button type="button" class="menu__btn" data-menu-button>
+            <svg width="40" height="40">
+              <use class="menu-icon" href="./images/icons.svg#icon-menu"></use>
+              <use
+                class="menu-close"
+                href="./images/icons.svg#icon-menu-close"
+              ></use>
             </svg>
           </button>
         </div>
@@ -338,7 +341,10 @@
                 <!-- MOBILE -->
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/portfolio/work-1-mobile@1x.jpg x1, ./images/portfolio/work-1-mobile@2.jpg x2" />
+                  srcset="
+                    ./images/portfolio/work-1-mobile@1x.jpg 1x,
+                    ./images/portfolio/work-1-mobile@2.jpg  2x
+                  " />
                 <img src="./images/portfolio/work-1-mobile@1x.jpg" alt=""
               /></picture>
             </li>
@@ -347,7 +353,10 @@
                 <!-- MOBILE -->
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/portfolio/work-2-mobile@1x.jpg x1, ./images/portfolio/work-2-mobile@2.jpg x2" />
+                  srcset="
+                    ./images/portfolio/work-2-mobile@1x.jpg 1x,
+                    ./images/portfolio/work-2-mobile@2.jpg  2x
+                  " />
                 <img src="./images/portfolio/work-2-mobile@1x.jpg" alt=""
               /></picture>
             </li>
@@ -356,7 +365,10 @@
                 <!-- MOBILE -->
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/portfolio/work-3-mobile@1x.jpg x1, ./images/portfolio/work-3-mobile@2.jpg x2" />
+                  srcset="
+                    ./images/portfolio/work-3-mobile@1x.jpg 1x,
+                    ./images/portfolio/work-3-mobile@2.jpg  2x
+                  " />
                 <img src="./images/portfolio/work-3-mobile@1x.jpg" alt=""
               /></picture>
             </li>
@@ -365,7 +377,10 @@
                 <!-- MOBILE -->
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/portfolio/work-4-mobile@1x.jpg x1, ./images/portfolio/work-4-mobile@2.jpg x2" />
+                  srcset="
+                    ./images/portfolio/work-4-mobile@1x.jpg 1x,
+                    ./images/portfolio/work-4-mobile@2.jpg  2x
+                  " />
                 <img src="./images/portfolio/work-4-mobile@1x.jpg" alt=""
               /></picture>
             </li>
@@ -375,7 +390,7 @@
       <!-- BOOKING -->
       <section class="section booking">
         <div class="container">
-          <form class="booking__form" action="">
+          <form class="booking__form">
             <p class="booking__text">Online-booking</p>
             <div class="booking__thumb">
               <label class="booking__label" for="name"></label>
@@ -458,5 +473,34 @@
         </ul>
       </div>
     </footer>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link mobile-nav__link--current" href="">About</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="">Services and prices</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="">Barbers</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="">Contacts</a>
+        </li>
+      </ul>
+      <a class="mobile-menu__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="button" type="button">online-booking</button>
+
+      <ul class="socials-iy socials-iy--mobile">
+        <li class="socials-iy__item socials-iy__item--mobile">
+          <a class="socials-iy__link socials-iy__link--mobile" href="">Instagram</a>
+        </li>
+        <li class="socials-iy__item socials-iy__item--mobile">
+          <a class="socials-iy__link socials-iy__link--mobile" href="">Youtube</a>
+        </li>
+      </ul>
+    </div>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
